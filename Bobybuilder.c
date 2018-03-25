@@ -39,6 +39,9 @@ int scanner(char cod[], int *pos){
 		}else if(cod[*pos] == 'i'){
 			printf("\n %c", cod[*pos] );
 			goto q98;
+		}else if(cod[*pos] == 'v'){
+			printf("\n %c", cod[*pos] );
+			goto q106;
 		}
 
 
@@ -629,6 +632,65 @@ int scanner(char cod[], int *pos){
   	 q105: (*pos)++;
 		return INTEIRO;
 
+	 q106: (*pos)++;
+  	 if (cod[*pos] == 'e'){
+  	 		printf("\n %c", cod[*pos] );
+  	 		goto q107;
+  	 	}
+
+	 q107: (*pos)++;
+  	 if (cod[*pos] == 'r'){
+  	 		printf("\n %c", cod[*pos] );
+  	 		goto q108;
+  	 	}
+
+	 q108: (*pos)++;
+  	 if (cod[*pos] == 'd'){
+  	 		printf("\n %c", cod[*pos] );
+  	 		goto q109;
+  	 	}
+
+	 q109: (*pos)++;
+  	 if (cod[*pos] == 'a'){
+  	 		printf("\n %c", cod[*pos] );
+  	 		goto q110;
+  	 	}
+
+	 q110: (*pos)++;
+  	 if (cod[*pos] == 'd'){
+  	 		printf("\n %c", cod[*pos] );
+  	 		goto q111;
+  	 	}
+	 q111: (*pos)++;
+  	 if (cod[*pos] == 'e'){
+  	 		printf("\n %c", cod[*pos] );
+  	 		goto q112;
+  	 	}
+	 q112: (*pos)++;
+  	 if (cod[*pos] == 'i'){
+  	 		printf("\n %c", cod[*pos] );
+  	 		goto q113;
+  	 	}
+	 q113: (*pos)++;
+  	 if (cod[*pos] == 'r'){
+  	 		printf("\n %c", cod[*pos] );
+  	 		goto q114;
+  	 	}
+	 q114: (*pos)++;
+  	 if (cod[*pos] == 'o'){
+  	 		printf("\n %c", cod[*pos] );
+  	 		goto q115;
+  	 	}
+
+	 q115: (*pos)++;
+  	 if (cod[*pos] == ' '){
+  	 		printf("\n %c", cod[*pos] );
+  	 		goto q116;
+  	 	}
+
+	 q116: (*pos)++;
+  	 	return VERDADEIRO;
+
 
 
 
@@ -636,7 +698,7 @@ int scanner(char cod[], int *pos){
 
 int main(){
 	int p = 0;
-	char codigo[] = {"inteiro "};
+	char codigo[] = {"verdadeiro "};
 
 	
 
