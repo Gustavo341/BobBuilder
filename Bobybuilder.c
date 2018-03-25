@@ -336,36 +336,30 @@ int scanner(char cod[], int *pos){
 	  	 return ENQUANTO;
 
   	 q56: (*pos)++;
-  	 if (cod[*pos] == 'f'){
+  	 if (cod[*pos] == 'a'){
   	 		printf("\n %c", cod[*pos] );
   	 		goto q57;
   	 	}
 
   	 q57: (*pos)++;
-  	 if (cod[*pos] == 'a'){
+  	 if (cod[*pos] == 'c'){
   	 		printf("\n %c", cod[*pos] );
   	 		goto q58;
   	 	}
 
   	 q58: (*pos)++;
-  	 if (cod[*pos] == 'c'){
+  	 if (cod[*pos] == 'a'){
   	 		printf("\n %c", cod[*pos] );
   	 		goto q59;
   	 	}
 
   	 q59: (*pos)++;
-  	 if (cod[*pos] == 'a'){
+  	 if (cod[*pos] == ' '){
   	 		printf("\n %c", cod[*pos] );
   	 		goto q60;
   	 	}
 
   	 q60: (*pos)++;
-  	 if (cod[*pos] == ' '){
-  	 		printf("\n %c", cod[*pos] );
-  	 		goto q61;
-  	 	}
-
-  	 q61: (*pos)++;
   	 	return FACA;
 
 
@@ -381,7 +375,7 @@ int scanner(char cod[], int *pos){
 
 int main(){
 	int p = 0;
-	char codigo[] = {"faca "};
+	char codigo[] = {"enquanto "};
 
 	
 
