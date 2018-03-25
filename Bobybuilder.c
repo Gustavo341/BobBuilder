@@ -17,7 +17,8 @@
 #define FACA 113
 #define FIMENQUANTO 115
 #define FIMPROGRAMA 116
-#define ERROR 000
+#define IDENTIFICADOR 117
+#define ERROR 666
 
 int scanner(char cod[], int *pos){
 	q0: 
@@ -42,6 +43,9 @@ int scanner(char cod[], int *pos){
 		}else if(cod[*pos] == 'v'){
 			printf("\n %c", cod[*pos] );
 			goto q106;
+		}else if((cod[*pos] == 'A') ||  (cod[*pos] == 'B') ||  (cod[*pos] == 'C') ||  (cod[*pos] == 'D') ||  (cod[*pos] == 'E') ||  (cod[*pos] == 'F') ||  (cod[*pos] == 'G') ||  (cod[*pos] == 'H') ||  (cod[*pos] == 'I') ||  (cod[*pos] == 'J') ||  (cod[*pos] == 'K') ||  (cod[*pos] == 'L') ||  (cod[*pos] == 'M') ||  (cod[*pos] == 'N') ||  (cod[*pos] == 'O') ||  (cod[*pos] == 'P') ||  (cod[*pos] == 'Q') ||  (cod[*pos] == 'R') ||  (cod[*pos] == 'S') ||  (cod[*pos] == 'T') ||  (cod[*pos] == 'U') ||  (cod[*pos] == 'V') ||  (cod[*pos] == 'W') ||  (cod[*pos] == 'X') ||  (cod[*pos] == 'Y') ||  (cod[*pos] == 'Z') ||  (cod[*pos] == 'a') ||   (cod[*pos] == 'c') ||  (cod[*pos] == 'd') ||  (cod[*pos] == 'g') ||  (cod[*pos] == 'h') ||    (cod[*pos] == 'j') ||  (cod[*pos] == 'k') ||  (cod[*pos] == 'l') ||  (cod[*pos] == 'm') ||  (cod[*pos] == 'n') ||  (cod[*pos] == 'o') ||  (cod[*pos] == 'q') ||  (cod[*pos] == 'r') ||   (cod[*pos] == 't') ||  (cod[*pos] == 'u') ||  (cod[*pos] == 'w') ||  (cod[*pos] == 'x') ||  (cod[*pos] == 'y') ||  (cod[*pos] == 'z')){
+			printf("\n %c", cod[*pos] );
+			goto q117;			
 		}
 
 
@@ -691,6 +695,18 @@ int scanner(char cod[], int *pos){
 	 q116: (*pos)++;
   	 	return VERDADEIRO;
 
+  	 q117:(*pos)++;
+  	 if ((cod[*pos] == 'A') ||  (cod[*pos] == 'B') ||  (cod[*pos] == 'C') ||  (cod[*pos] == 'D') ||  (cod[*pos] == 'E') ||  (cod[*pos] == 'F') ||  (cod[*pos] == 'G') ||  (cod[*pos] == 'H') ||  (cod[*pos] == 'I') ||  (cod[*pos] == 'J') ||  (cod[*pos] == 'K') ||  (cod[*pos] == 'L') ||  (cod[*pos] == 'M') ||  (cod[*pos] == 'N') ||  (cod[*pos] == 'O') ||  (cod[*pos] == 'P') ||  (cod[*pos] == 'Q') ||  (cod[*pos] == 'R') ||  (cod[*pos] == 'S') ||  (cod[*pos] == 'T') ||  (cod[*pos] == 'U') ||  (cod[*pos] == 'V') ||  (cod[*pos] == 'W') ||  (cod[*pos] == 'X') ||  (cod[*pos] == 'Y') ||  (cod[*pos] == 'Z') ||  (cod[*pos] == 'a') ||  (cod[*pos] == 'b') ||  (cod[*pos] == 'c') ||  (cod[*pos] == 'd') ||  (cod[*pos] == 'e') ||  (cod[*pos] == 'f') ||  (cod[*pos] == 'g') ||  (cod[*pos] == 'h') ||  (cod[*pos] == 'i') ||  (cod[*pos] == 'j') ||  (cod[*pos] == 'k') ||  (cod[*pos] == 'l') ||  (cod[*pos] == 'm') ||  (cod[*pos] == 'n') ||  (cod[*pos] == 'o') ||  (cod[*pos] == 'p') ||  (cod[*pos] == 'q') ||  (cod[*pos] == 'r') ||  (cod[*pos] == 's') ||  (cod[*pos] == 't') ||  (cod[*pos] == 'u') ||  (cod[*pos] == 'v') ||  (cod[*pos] == 'w') ||  (cod[*pos] == 'x') ||  (cod[*pos] == 'y') ||  (cod[*pos] == 'z')){
+  	 		printf("\n %c", cod[*pos] );
+  	 		goto q117;
+  	 	}else if (cod[*pos] == ' '){
+  	 		goto q118;
+  	 	}
+
+  	q118:(*pos)++;
+  	 	return IDENTIFICADOR;
+
+
 
 
 
@@ -698,7 +714,7 @@ int scanner(char cod[], int *pos){
 
 int main(){
 	int p = 0;
-	char codigo[] = {"verdadeiro "};
+	char codigo[] = {"averdadeiro "};
 
 	
 
