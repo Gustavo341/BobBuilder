@@ -398,7 +398,10 @@ int scanner(char cod[], int *pos){
   	 if (cod[*pos] == 'e'){
   	 		printf("\n %c", cod[*pos] );
   	 		goto q67;
-  	 	}
+  	 	}else if(cod[*pos] == 'p'){
+			printf("\n %c", cod[*pos] );
+			goto q76;
+		}
   	 q67: (*pos)++;
   	 if (cod[*pos] == 'n'){
   	 		printf("\n %c", cod[*pos] );
@@ -449,8 +452,79 @@ int scanner(char cod[], int *pos){
   	 q75: (*pos)++;
   	  return FIMENQUANTO;
 
+  	 q76: (*pos)++;
+  	 if (cod[*pos] == 'r'){
+  	 		printf("\n %c", cod[*pos] );
+  	 		goto q77;
+  	 	}
 
+  	 q77: (*pos)++;
+  	 if (cod[*pos] == 'o'){
+  	 		printf("\n %c", cod[*pos] );
+  	 		goto q78;
+  	 	}
+  	 q78: (*pos)++;
+  	 if (cod[*pos] == 'c'){
+  	 		printf("\n %c", cod[*pos] );
+  	 		goto q79;
+  	 	}
 
+  	 q79: (*pos)++;
+  	 if (cod[*pos] == 'e'){
+  	 		printf("\n %c", cod[*pos] );
+  	 		goto q80;
+  	 	}
+
+  	 q80: (*pos)++;
+  	 if (cod[*pos] == 'd'){
+  	 		printf("\n %c", cod[*pos] );
+  	 		goto q81;
+  	 	}
+
+  	 q81: (*pos)++;
+  	 if (cod[*pos] == 'i'){
+  	 		printf("\n %c", cod[*pos] );
+  	 		goto q82;
+  	 	}
+
+  	 q82: (*pos)++;
+  	 if (cod[*pos] == 'm'){
+  	 		printf("\n %c", cod[*pos] );
+  	 		goto q83;
+  	 	}
+
+  	 q83: (*pos)++;
+  	 if (cod[*pos] == 'e'){
+  	 		printf("\n %c", cod[*pos] );
+  	 		goto q84;
+  	 	}
+
+  	 q84: (*pos)++;
+  	 if (cod[*pos] == 'n'){
+  	 		printf("\n %c", cod[*pos] );
+  	 		goto q85;
+  	 	}
+
+  	 q85: (*pos)++;
+  	 if (cod[*pos] == 't'){
+  	 		printf("\n %c", cod[*pos] );
+  	 		goto q86;
+  	 	}
+
+  	 q86: (*pos)++;
+  	 if (cod[*pos] == 'o'){
+  	 		printf("\n %c", cod[*pos] );
+  	 		goto q87;
+  	 	}
+
+  	 q87: (*pos)++;
+  	 if (cod[*pos] == ' '){
+  	 		printf("\n %c", cod[*pos] );
+  	 		goto q88;
+  	 	}
+
+  	 q88: (*pos)++;
+  	 	return FIMPROCEDIMENTO;
 
 
 
