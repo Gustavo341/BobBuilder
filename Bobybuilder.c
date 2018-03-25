@@ -36,6 +36,9 @@ int scanner(char cod[], int *pos){
 		}else if(cod[*pos] == 'f'){
 			printf("\n %c", cod[*pos] );
 			goto q56;
+		}else if(cod[*pos] == 'i'){
+			printf("\n %c", cod[*pos] );
+			goto q98;
 		}
 
 
@@ -401,7 +404,11 @@ int scanner(char cod[], int *pos){
   	 	}else if(cod[*pos] == 'p'){
 			printf("\n %c", cod[*pos] );
 			goto q76;
+		}else if(cod[*pos] == 's'){
+			printf("\n %c", cod[*pos] );
+			goto q95;
 		}
+
   	 q67: (*pos)++;
   	 if (cod[*pos] == 'n'){
   	 		printf("\n %c", cod[*pos] );
@@ -562,6 +569,66 @@ int scanner(char cod[], int *pos){
   	 q94: (*pos)++;
  		return FIMPROGRAMA;
 
+  	 q95: (*pos)++;
+  	 if (cod[*pos] == 'e'){
+  	 		printf("\n %c", cod[*pos] );
+  	 		goto q96;
+  	 	}
+
+  	 q96: (*pos)++;
+  	 if (cod[*pos] == ' '){
+  	 		printf("\n %c", cod[*pos] );
+  	 		goto q97;
+  	 	}
+
+  	 q97: (*pos)++;
+  	 	return FIMSE;
+
+  	 q98: (*pos)++;
+  	 if (cod[*pos] == 'n'){
+  	 		printf("\n %c", cod[*pos] );
+  	 		goto q99;
+  	 	}
+
+  	 q99: (*pos)++;
+  	 if (cod[*pos] == 't'){
+  	 		printf("\n %c", cod[*pos] );
+  	 		goto q100;
+  	 	}
+
+  	 q100: (*pos)++;
+  	 if (cod[*pos] == 'e'){
+  	 		printf("\n %c", cod[*pos] );
+  	 		goto q101;
+  	 	}
+
+  	 q101: (*pos)++;
+  	 if (cod[*pos] == 'i'){
+  	 		printf("\n %c", cod[*pos] );
+  	 		goto q102;
+  	 	}
+
+  	 q102: (*pos)++;
+  	 if (cod[*pos] == 'r'){
+  	 		printf("\n %c", cod[*pos] );
+  	 		goto q103;
+  	 	}
+
+  	 q103: (*pos)++;
+  	 if (cod[*pos] == 'o'){
+  	 		printf("\n %c", cod[*pos] );
+  	 		goto q104;
+  	 	}
+
+  	 q104: (*pos)++;
+  	 if (cod[*pos] == ' '){
+  	 		printf("\n %c", cod[*pos] );
+  	 		goto q105;
+  	 	}
+
+  	 q105: (*pos)++;
+		return INTEIRO;
+
 
 
 
@@ -569,7 +636,7 @@ int scanner(char cod[], int *pos){
 
 int main(){
 	int p = 0;
-	char codigo[] = {"fimenquanto "};
+	char codigo[] = {"inteiro "};
 
 	
 
