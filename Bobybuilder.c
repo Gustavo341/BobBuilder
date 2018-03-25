@@ -16,7 +16,7 @@
 #define ENQUANTO 112
 #define FACA 113
 #define FIMENQUANTO 115
-#define FIMPROGRAMA 115
+#define FIMPROGRAMA 116
 #define ERROR 000
 
 int scanner(char cod[], int *pos){
@@ -467,7 +467,10 @@ int scanner(char cod[], int *pos){
   	 if (cod[*pos] == 'c'){
   	 		printf("\n %c", cod[*pos] );
   	 		goto q79;
-  	 	}
+  	 	}else if(cod[*pos] == 'g'){
+			printf("\n %c", cod[*pos] );
+			goto q89;
+		}
 
   	 q79: (*pos)++;
   	 if (cod[*pos] == 'e'){
@@ -525,6 +528,39 @@ int scanner(char cod[], int *pos){
 
   	 q88: (*pos)++;
   	 	return FIMPROCEDIMENTO;
+
+  	 q89: (*pos)++;
+  	 if (cod[*pos] == 'r'){
+  	 		printf("\n %c", cod[*pos] );
+  	 		goto q90;
+  	 	}
+
+  	 q90: (*pos)++;
+  	 if (cod[*pos] == 'a'){
+  	 		printf("\n %c", cod[*pos] );
+  	 		goto q91;
+  	 	}
+
+  	 q91: (*pos)++;
+  	 if (cod[*pos] == 'm'){
+  	 		printf("\n %c", cod[*pos] );
+  	 		goto q92;
+  	 	}
+
+  	 q92: (*pos)++;
+  	 if (cod[*pos] == 'a'){
+  	 		printf("\n %c", cod[*pos] );
+  	 		goto q93;
+  	 	}
+
+  	 q93: (*pos)++;
+  	 if (cod[*pos] == ' '){
+  	 		printf("\n %c", cod[*pos] );
+  	 		goto q94;
+  	 	}
+
+  	 q94: (*pos)++;
+ 		return FIMPROGRAMA;
 
 
 
